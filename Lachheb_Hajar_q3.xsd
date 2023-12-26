@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://mycv.org/"
+	       xmlns="http://mycv.org/"
+	       elementFormDefault="qualified">
+
+  <xs:element name="cv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="etat_civil"/>
+        <xs:element ref="titre"/>
+        <xs:element ref="CursusAcademique"/>
+        <xs:element ref="ExperiencesProfessionnelles"/>
+        <xs:element ref="Competences"/>
+        <xs:element ref="Langues"/>
+        <xs:element ref="CentresInteret"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="etat_civil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Prénom"/>
+        <xs:element ref="Nom"/>
+        <xs:element ref="datenaissance"/>
+        <xs:element ref="adresse"/>
+        <xs:element ref="telephone"/>
+        <xs:element ref="email"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="photo"/>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="titre" type="xs:string"/>
+
+  <xs:element name="CursusAcademique">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="formation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ExperiencesProfessionnelles">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="10">
+        <xs:element ref="experience"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Competences">
+    <xs:complexType>
+      <xs:sequence minOccurs="2"  maxOccurs="unbounded">
+        <xs:element ref="competence"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Langues">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="langue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CentresInteret">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="loisirs"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+<xs:element name="Prénom" type="xs:string">
+          <xs:pattern value="[A-Z][a-z]+"/>
+  </xs:element>
+
+  <xs:element name="Nom" type="xs:string">
+            <xs:pattern value="[A-Z]+"/>
+  </xs:element>
+  
+  <xs:element name="datenaissance" type="xs:string"/>
+
+  <xs:element name="adresse" type="xs:string"/>
+
+  <xs:element name="telephone" type="xs:string"/>
+
+  <xs:element name="email" type="xs:string"/>
+
+  <xs:element name="photo" type="xs:string"/>
+
+  <xs:element name="formation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dateDebut"/>
+        <xs:element ref="dateFin"/>
+        <xs:element ref="libelle"/>
+        <xs:element ref="ecole"/>
+        <xs:element ref="ville"/>
+        <xs:element ref="pays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dateDebut" type="xs:string"/>
+
+  <xs:element name="dateFin" type="xs:string"/>
+
+  <xs:element name="libelle" type="xs:string"/>
+
+  <xs:element name="ecole" type="xs:string"/>
+
+  <xs:element name="ville" type="xs:string"/>
+
+  <xs:element name="pays" type="xs:string"/>
+
+  <xs:element name="experience">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dateDebut"/>
+        <xs:element ref="dateFin"/>
+        <xs:element ref="intitule"/>
+        <xs:element ref="organisme"/>
+        <xs:element ref="ville"/>
+        <xs:element ref="pays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="intitule" type="xs:string"/>
+
+  <xs:element name="organisme" type="xs:string"/>
+
+  <xs:element name="competence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sujet"/>
+        <xs:element ref="details"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="sujet" type="xs:string"/>
+
+  <xs:element name="details" type="xs:string"/>
+
+  <xs:element name="langue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="lan"/>
+        <xs:element ref="niveaumaitrise">
+                 <xs:pattern value="[Langue Maternelle][Moyen][Courant][Notions]"/>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="lan" type="xs:string"/>
+
+  <xs:element name="niveaumaitrise" type="xs:string"/>
+
+  <xs:element name="loisirs">
+    <xs:complexType>
+      <xs:element ref="nomduloisir"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nomduloisir" type="xs:string"/>
+
+</xs:schema>

@@ -1,0 +1,33 @@
+<!ELEMENT cv ( etat_civil, titre, CursusAcademique, ExperiencesProfessionnelles, Competences, Langues, CentresInteret ) > 
+<!ELEMENT etat_civil ( Prénom, Nom, datenaissance, adresse, telephone, email, photo? ) > 
+<!ELEMENT Prénom ( #PCDATA ) >
+<!ELEMENT Nom ( #PCDATA ) >
+<!ELEMENT datenaissance ( #PCDATA ) >
+<!ELEMENT adresse ( #PCDATA ) >
+<!ELEMENT telephone ( #PCDATA ) >
+<!ELEMENT email ( #PCDATA ) >
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT titre ( #PCDATA ) >
+<!ELEMENT CursusAcademique ( formation+ ) >
+<!ELEMENT formation (dateDebut, dateFin, libelle, ecole, ville, pays) >
+<!ELEMENT ExperiencesProfessionnelles ( experience+ ) >
+<!ELEMENT experience (dateDebut, dateFin, intitule, organisme, ville, pays) >
+<!ELEMENT dateDebut ( #PCDATA ) >
+<!ELEMENT dateFin ( #PCDATA ) >
+<!ELEMENT libelle ( #PCDATA ) >
+<!ELEMENT ecole ( #PCDATA ) >
+<!ELEMENT ville ( #PCDATA ) >
+<!ELEMENT pays ( #PCDATA ) >
+<!ELEMENT intitule ( #PCDATA ) >
+<!ELEMENT organisme (#PCDATA)>
+<!ELEMENT Competences ( competence+ ) >
+<!ELEMENT competence (sujet,details) >
+<!ELEMENT sujet ( #PCDATA ) >
+<!ELEMENT details (#PCDATA ) >
+<!ELEMENT Langues ( langue+ ) >
+<!ELEMENT langue (lan, niveaumaitrise) >
+<!ELEMENT lan ( #PCDATA ) >
+<!ELEMENT niveaumaitrise ( #PCDATA ) >
+<!ELEMENT CentresInteret ( loisirs+ ) >
+<!ELEMENT loisirs (nomduloisir) >
+<!ELEMENT nomduloisir ( #PCDATA ) > 

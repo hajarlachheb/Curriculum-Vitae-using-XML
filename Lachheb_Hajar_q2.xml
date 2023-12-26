@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv  SYSTEM "C:\Users\admin\OneDrive\Bureau\Lachheb_Hajar\Lachheb_Hajar_q1.dtd">
+<?xml-stylesheet type="text/xsl" href="Lachheb_Hajar_q6.xsl"?>
+<?xml-stylesheet type="text/xsl" href="Lachheb_Hajar_q5.xsl"?>
+<?xml-stylesheet type="text/xsl" href="Lachheb_Hajar_q4.xsl"?>
+
+
+<cv>
+  <etat_civil>
+		<Prénom>Hajar</Prénom>
+		<Nom>Lachheb</Nom>
+		<datenaissance>20/06/1999</datenaissance>
+    <adresse>Residence Oum Hani, Imm D, App 35, Hors Bab Sebta</adresse>
+    <telephone>06 21 05 00 49</telephone>
+		<email>Hajar.lachheb22@esi.ac.ma</email>
+	</etat_civil>
+	
+	<titre>Demande de stage de PFE en AI et Data Science</titre>
+	
+	<CursusAcademique>
+	  <formation>
+	    <dateDebut>06/09/2019</dateDebut>
+	    <dateFin>06/07/2022</dateFin>
+	    <libelle>Élève Ingénieur en Connaissances et Données</libelle>
+	    <ecole>École des Sciences De L’Information</ecole>
+	    <ville>Rabat</ville>
+	    <pays>Maroc</pays>
+    </formation>
+<formation>
+	    <dateDebut>06/09/2017</dateDebut>
+	    <dateFin>06/07/2019</dateFin>
+	    <libelle>Élève en classe préparatoires</libelle>
+	    <ecole>Centre Préparatoire Salman El Farissi</ecole>
+	    <ville>Salé</ville>
+	    <pays>Maroc</pays>
+    </formation>
+<formation>
+	    <dateDebut>06/09/2017</dateDebut>
+	    <dateFin>06/07/2016</dateFin>
+	    <libelle>Bachelière en Science Physique - Filière Française</libelle>
+	    <ecole>Groupe Scolaire AlMaarif1</ecole>
+	    <ville>Salé</ville>
+	    <pays>Maroc</pays>
+    </formation>
+
+  </CursusAcademique>
+  
+  <ExperiencesProfessionnelles>
+    <experience>
+      <dateDebut>06/06/2021</dateDebut>
+	    <dateFin>08/08/2021</dateFin>
+	    <intitule>Stage de deuxième année en stratégie et veille</intitule>
+	    <organisme>ADD</organisme>
+	    <ville>Rabat</ville>
+	    <pays>Maroc</pays>
+    </experience>
+    <experience>
+      <dateDebut>06/07/2020</dateDebut>
+	    <dateFin>08/08/2020</dateFin>
+	    <intitule>Stage de première année en ML</intitule>
+	    <organisme>MCISE</organisme>
+	    <ville>Rabat</ville>
+	    <pays>Maroc</pays>
+    </experience>
+  </ExperiencesProfessionnelles>
+  
+  <Competences>
+ <competence>
+      <sujet>Langage de programmation</sujet>
+      <details>Python, R, Matlab, Java , Java EE , PHP</details>
+          </competence>
+              <competence>
+      <sujet>Data Science et Machine Learning</sujet>
+      <details>TensorFlow, Keras, NLTK, Scikit-Learn, Numpy, Pandas, Seaborn, Matplotlib, OpenCV, Gensim </details>
+          </competence>
+            <competence>
+      <sujet>Développement Web</sujet>
+      <details> HTML5, CSS3, Javascript, PHP, JQuery, Bootstrap4, ASP.NET. </details>
+          </competence>
+              <competence>
+      <sujet>Data Engineering</sujet>
+      <details> PostgreSQL, MongoDB, Cassandra, HBase, Hadoop, PL/SQL, Apache Spark, Oracle, SQL, Access.</details>
+          </competence>
+              <competence>
+      <sujet>Cloud Computing</sujet>
+      <details>Azure, Google Cloud et Amazon Cloud</details>
+    </competence>
+  </Competences>
+  
+  <Langues>
+    <langue>
+     <lan>Arabe</lan>
+      <niveaumaitrise>Langue Maternelle</niveaumaitrise>
+    </langue>
+        <langue>
+      <lan>Anglais</lan>
+      <niveaumaitrise>Courant</niveaumaitrise>
+         </langue>
+            <langue>
+   <lan>Francais</lan>
+      <niveaumaitrise>Courant</niveaumaitrise>
+      </langue>
+         <langue>
+   <lan>Espagnol</lan>
+      <niveaumaitrise>Notions</niveaumaitrise>
+    </langue>
+  </Langues>
+  
+  <CentresInteret>
+    <loisirs>
+      <nomduloisir>Musique</nomduloisir>
+      </loisirs>
+      <loisirs>
+ <nomduloisir>Dessin</nomduloisir>
+ </loisirs>
+ <loisirs>
+ <nomduloisir>Danse</nomduloisir>
+    </loisirs>
+  </CentresInteret>
+</cv>
